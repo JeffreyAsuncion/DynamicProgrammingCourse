@@ -1,4 +1,4 @@
-// gridTraveler Time O(n+m) : Space O(n+m)
+// gridTraveler Time O(n*m) : Space O(n+m)
 
 /*
 Say that you are a traveler on a 2D grid. You begin the 
