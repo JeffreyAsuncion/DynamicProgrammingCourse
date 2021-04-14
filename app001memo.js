@@ -6,10 +6,13 @@
 const fib = (n, memo = {}) => {
     // check in n in the memo like dictionary in python
     if (n in memo) return memo[n];
+
     // base case
     if (n <= 2) return 1;
+
     // this saves/caches a memo of a calculation; so you don't duplicate calculations
     memo[n] =  fib(n - 1, memo) + fib(n - 2, memo);
+    // make sure to return the value calculated in line 14
     return memo[n]
 };
 
