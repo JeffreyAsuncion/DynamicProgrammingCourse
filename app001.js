@@ -1,7 +1,11 @@
 // fibonacci Complexity Time O(2^n) : Space O(n)
 
 const fib = (n) => {
+    // base case
     if (n <= 2) return 1;
+
+    // recursive call  
+    // the two calls to the fib make it Time O(2^n)
     return fib(n - 1) + fib(n - 2);
 };
 
