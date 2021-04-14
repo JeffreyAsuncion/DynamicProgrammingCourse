@@ -12,8 +12,11 @@ Write a funciton `gridTraveler(m,n)` that calculates this.
 */
 
 const gridTraveler = (m, n) => {
+    // base case of traveling in a 1,1 === 1
     if (m == 1 && n == 1) return 1;
+    // base case of a grid with one dim == 0 === 0
     if (m == 0 || n == 0) return 0;
+    // this is the going down + going right
     return gridTraveler(m - 1, n) + gridTraveler(m, n - 1);
 };
 
